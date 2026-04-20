@@ -1,0 +1,52 @@
+,state,region,division
+0,Connecticut,Northeast,New England
+1,Maine,Northeast,New England
+2,Massachusetts,Northeast,New England
+3,New Hampshire,Northeast,New England
+4,Rhode Island,Northeast,New England
+5,Vermont,Northeast,New England
+6,New Jersey,Northeast,Middle Atlantic
+7,New York,Northeast,Middle Atlantic
+8,Pennsylvania,Northeast,Middle Atlantic
+9,Illinois,Midwest,East North Central
+10,Indiana,Midwest,East North Central
+11,Michigan,Midwest,East North Central
+12,Ohio,Midwest,East North Central
+13,Wisconsin,Midwest,East North Central
+14,Iowa,Midwest,West North Central
+15,Kansas,Midwest,West North Central
+16,Minnesota,Midwest,West North Central
+17,Missouri,Midwest,West North Central
+18,Nebraska,Midwest,West North Central
+19,North Dakota,Midwest,West North Central
+20,South Dakota,Midwest,West North Central
+21,Delaware,South,South Atlantic
+22,District of Columbia,South,South Atlantic
+23,Florida,South,South Atlantic
+24,Georgia,South,South Atlantic
+25,Maryland,South,South Atlantic
+26,North Carolina,South,South Atlantic
+27,South Carolina,South,South Atlantic
+28,Virginia,South,South Atlantic
+29,West Virginia,South,South Atlantic
+30,Alabama,South,East South Central
+31,Kentucky,South,East South Central
+32,Mississippi,South,East South Central
+33,Tennessee,South,East South Central
+34,Arkansas,South,West South Central
+35,Louisiana,South,West South Central
+36,Oklahoma,South,West South Central
+37,Texas,South,West South Central
+38,Arizona,West,Mountain
+39,Colorado,West,Mountain
+40,Idaho,West,Mountain
+41,Montana,West,Mountain
+42,Nevada,West,Mountain
+43,New Mexico,West,Mountain
+44,Utah,West,Mountain
+45,Wyoming,West,Mountain
+46,Alaska,West,Pacific
+47,California,West,Pacific
+48,Hawaii,West,Pacific
+49,Oregon,West,Pacific
+50,Washington,West,Pacific
