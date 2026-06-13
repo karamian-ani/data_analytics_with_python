@@ -61,3 +61,27 @@ def my_bar_plot(df:pd.DataFrame,
         
     
     return fig
+
+def csv_downloader(URL: str, name: str, path: str):
+    """
+    Download a CSV file from a URL, save it locally, and return it as a DataFrame.
+
+    Parameters
+    ----------
+    URL : str
+        CSV file URL.
+    name : str
+        Output file name.
+    path : str
+        Directory where the file will be saved.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Downloaded CSV data.
+    """
+    df = pd.read_csv(URL)
+    df.to_csv(f"{path}/{name}", index=False)
+    print(f'{name} have been successfully saved in {path}')
+    print(f"The size of the data {df.shape}")
+    return df
