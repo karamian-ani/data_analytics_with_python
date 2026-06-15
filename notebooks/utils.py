@@ -85,3 +85,19 @@ def csv_downloader(URL: str, name: str, path: str):
     print(f'{name} have been successfully saved in {path}')
     print(f"The size of the data {df.shape}")
     return df
+
+def naming(df):
+    if df['RFM_Score'] >= 9:
+        return 'Can\'t Loose Them'
+    elif ((df['RFM_Score'] >= 8) and (df['RFM_Score'] < 9)):
+        return 'Champions'
+    elif ((df['RFM_Score'] >= 7) and (df['RFM_Score'] < 8)):
+        return 'Loyal/Commited'
+    elif ((df['RFM_Score'] >= 6) and (df['RFM_Score'] < 7)):
+        return 'Potential'
+    elif ((df['RFM_Score'] >= 5) and (df['RFM_Score'] < 6)):
+        return 'Promising'
+    elif ((df['RFM_Score'] >= 4) and (df['RFM_Score'] < 5)):
+        return 'Requires Attention'
+    else:
+        return 'Demands Activation'
