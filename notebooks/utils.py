@@ -52,10 +52,7 @@ def my_bar_plot(df:pd.DataFrame,
     fig.update_layout(
         xaxis_title=x_col.capitalize(),
         yaxis_title=y_col.capitalize(),
-        legend_title="",
-        
-        
-        
+        legend_title=""  
     )
 
         
@@ -101,3 +98,39 @@ def naming(df):
         return 'Requires Attention'
     else:
         return 'Demands Activation'
+    
+def my_date_diff(df:pd.DataFrame,
+                 target_column:str,
+                 start_date:str,
+                 end_date:str,
+                 by:str ='M')->pd.DataFrame:
+    """
+    
+    Compute month difference between two datetime columns.
+
+    Adds a 'month_diff' column to the DataFrame.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+    start_date : str
+    end_date : str
+    by : str, default 'M'
+
+    Returns
+    -------
+    pd.DataFrame
+    """
+    
+    if by == 'M':
+        df[target_column] = (
+            (df[end_date].dt.year - df[start_date].dt.year) * 12+ 
+            (df[end_date].dt.month - df[start_date].dt.month)
+        )
+    elif by == 'Y': df[target_column] = (
+            (df[end_date].dt.year - df[start_date].dt.year))
+    else:
+        pass
+
+    return df
+    
