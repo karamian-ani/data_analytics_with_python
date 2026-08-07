@@ -134,3 +134,13 @@ def my_date_diff(df:pd.DataFrame,
 
     return df
     
+
+def rsquared(y,y_hat):
+    rsquared = 1 - np.sum((y-y_hat)**2)/np.sum((y - y.mean())**2)
+    return rsquared
+
+def rmse(y,y_hat):
+    rmse = np.sqrt(np.mean((y-y_hat)**2))
+    return rmse
+
+
